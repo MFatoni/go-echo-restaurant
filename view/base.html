@@ -1,0 +1,89 @@
+{{define "base.html"}}
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>{{template "title" .}}</title>
+      <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="/static/fonts/beyond_the_mountains-webfont.css" type="text/css" />
+      <link href="static/plugin-frameworks/bootstrap.min.css" rel="stylesheet" />
+      <link href="static/plugin-frameworks/swiper.css" rel="stylesheet" />
+      <link href="static/fonts/ionicons.css" rel="stylesheet" />
+      <link href="static/common/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+      <header>
+        <div class="container">
+          <a class="logo" href="#">
+            <img src="static/images/heading_logo.png" alt="Logo" />
+            <b style="font-size:35px;font-family:Georgia;">Fatoni's Resto</b>
+            <div class="right-area d-none d-sm-block">
+              <h6><a class="plr-20 color-white btn-fill-primary" href="#">ORDER : 0812345678</a></h6>
+            </div>
+            <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+            <ul class="main-menu font-mountainsre" id="main-menu">
+              <li><a href="/">HOME</a></li>
+              <li><a href="">ABOUT US</a></li>
+              <li><a href="">SERVICES</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </a>
+        </div>
+      </header>
+      {{template "body" .}}
+      <footer class="pb-50 pt-70 pos-relative">
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container-fluid">
+          <a href="#">
+            <img src="static/images/heading_logo.png" alt="Logo" width="50" height="50" />
+          </a>
+          <div class="pt-30">
+            <p class="underline-secondary">
+              <b>Address :</b>
+            </p>
+            <p>
+              Jalan margonda raya
+            </p>
+          </div>
+          <div class="pt-30">
+            <p class="underline-secondary">
+              <b>Phone :</b>
+            </p>
+            <a href="tel:+6281235678">
+              0812345567
+            </a>
+          </div>
+          <div class="pt-30">
+            <p class="underline-secondary">
+              <b>Email :</b>
+            </p>
+            <a href="mailto:test@gmail.com">
+              test@gmail.com
+            </a>
+          </div>
+          <ul class="icon mt-30">
+            <li>
+              <a href="#"><i class="ion-social-pinterest"></i></a>
+              <a href="#"><i class="ion-social-facebook"></i></a>
+              <a href="#"><i class="ion-social-twitter"></i></a>
+              <a href="#"><i class="ion-social-dribbble-outline"></i></a>
+              <a href="#"><i class="ion-social-linkedin"></i></a>
+              <a href="#"><i class="ion-social-vimeo"></i></a>
+            </li>
+          </ul>
+          <p class="color-light font-9 mt-50 mt-sm-30">
+            Copyright &copy; <script>document.write(new Date().getFullYear())</script>
+            All Right reserved | this website is made with <i class="ion-heart" aria-hidden="true"></i>
+            <a href="" target="_black">Love</a>
+          </p>
+        </div>
+      </footer>
+      <script src="static/plugin-frameworks/jquery-3.2.1.min.js"></script>
+      <script src="static/plugin-frameworks/bootstrap.min.js"></script>
+      <script src="static/plugin-frameworks/swiper.js"></script>
+      <script src="static/common/scripts.js"></script>
+    </body>
+  </html>
+{{end}}
